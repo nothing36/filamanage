@@ -35,8 +35,15 @@ const useFilamentStore = create<FilamentStoreState>((set, get) => ({
     // interesting...
     // use set((state) => ({ ... })); to update in zustand
     addFilament: (filament) => {
+        // TODO: update id generation
+        const idFilament = {
+            ...filament,
+            id: filament.id || crypto.randomUUID()   // random, might overlap?
+        }
+
+        // update the store
         set((state) => ({
-            filaments: [...state.filaments, filament]
+            filaments: [...state.filaments, idFilament]
         }));
     },
 
