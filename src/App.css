@@ -1,0 +1,16 @@
+.app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.content-wrapper {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
