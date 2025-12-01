@@ -16,14 +16,17 @@ function App() {
     const navItems = [
         { path: '/', label: 'Dashboard', icon: '■', tooltip: 'Dashboard' },
         { path: '/inventory', label: 'Inventory', icon: '▦', tooltip: 'Inventory' },
-        { path: '/add-filament', label: 'Add Filament', icon: '+', tooltip: 'Add Filament' },
+        { path: '/add-filament', label: 'Add Filament', icon: '+', tooltip: 'Add Filament' }
+    ];
+
+    const bottomNavItems = [
         { path: '/settings', label: 'Settings', icon: '⚙', tooltip: 'Settings' }
     ];
 
     return (
         <Router>
             <div className="app">
-                <IconSidebar items={navItems} />
+                <IconSidebar items={navItems} bottomItems={bottomNavItems} />
 
                 <main className="main-content">
                     <div className="content-wrapper">
