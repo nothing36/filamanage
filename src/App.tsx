@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sidebar from './components/common/Sidebar/Sidebar';
+import IconSidebar from './components/common/IconSidebar/IconSidebar';
 import Dashboard from './pages/Dashboard';
 import Inventory from './pages/Inventory';
 import AddFilament from './pages/AddFilament';
@@ -12,18 +12,18 @@ function App() {
     // initialize theme system
     useTheme();
 
-    // items for navbar
+    // items for icon sidebar
     const navItems = [
-        { path: '/', label: 'Dashboard', icon: '1'},
-        { path: '/inventory', label: 'Inventory', icon: '2'},
-        { path: '/add-filament', label: 'Add Filament', icon: '3'},
-        { path: '/settings', label: 'Settings', icon: '4'}
+        { path: '/', label: 'Dashboard', icon: '■', tooltip: 'Dashboard' },
+        { path: '/inventory', label: 'Inventory', icon: '▦', tooltip: 'Inventory' },
+        { path: '/add-filament', label: 'Add Filament', icon: '+', tooltip: 'Add Filament' },
+        { path: '/settings', label: 'Settings', icon: '⚙', tooltip: 'Settings' }
     ];
 
     return (
         <Router>
             <div className="app">
-                <Sidebar appName="filaManage" navItems={navItems}></Sidebar>
+                <IconSidebar items={navItems} />
 
                 <main className="main-content">
                     <div className="content-wrapper">
