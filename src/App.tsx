@@ -5,9 +5,12 @@ import Dashboard from './pages/Dashboard';
 import Inventory from './pages/Inventory';
 import AddFilament from './pages/AddFilament';
 import Settings from './pages/Settings';
+import { useTheme } from './hooks/useTheme';
 import './App.css';
 
 function App() {
+    // initialize theme system
+    useTheme();
 
     // items for navbar
     const navItems = [

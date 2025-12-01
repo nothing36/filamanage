@@ -6,11 +6,11 @@
 
 .main-content {
     flex: 1;
-    background-color: #ffffff;
+    background-color: var(--color-bg-primary);
 }
 
 .content-wrapper {
-    padding: 24px;
+    padding: var(--spacing-lg);
     max-width: 1200px;
     margin: 0 auto;
 }
