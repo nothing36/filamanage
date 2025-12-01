@@ -1,0 +1,36 @@
+/* reusable card component styling */
+
+.card {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    transition: all var(--transition-fast);
+}
+
+/* optional header section */
+.card-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* main content area */
+.card-content {
+    color: var(--color-text-primary);
+}
+
+/* clickable card hover effect */
+.card-clickable {
+    cursor: pointer;
+}
+
+.card-clickable:hover {
+    background-color: var(--color-bg-tertiary);
+    border-color: var(--color-accent-blue);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+}
