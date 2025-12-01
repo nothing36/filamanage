@@ -1,16 +1,15 @@
 .app {
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .main-content {
     flex: 1;
     background-color: var(--color-bg-primary);
+    overflow-y: auto;
 }
 
 .content-wrapper {
     padding: var(--spacing-lg);
-    max-width: 1200px;
-    margin: 0 auto;
 }
